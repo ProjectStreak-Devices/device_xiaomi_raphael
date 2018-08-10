@@ -91,6 +91,9 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys7/restart_level "related"
     write /sys/bus/msm_subsys/devices/subsys8/restart_level "related"
 
+    # Permission for Health Storage HAL
+    chown system system /sys/devices/platform/soc/1d84000.ufshc/manual_gc
+
 on boot
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/state
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
