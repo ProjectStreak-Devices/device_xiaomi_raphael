@@ -255,6 +255,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES += \
     signapk
 
+# Insmod files
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
+
 # VNDK
 PRODUCT_PACKAGES += \
     libstdc++.vendor \
@@ -283,6 +287,7 @@ PRODUCT_BOOT_JARS += \
 
 # Init
 PRODUCT_PACKAGES += \
+    init.insmod.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \

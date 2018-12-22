@@ -15,6 +15,10 @@ ro.hardware.fp                     u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.                    u:object_r:vendor_fp_prop:s0
 sys.panel.display                  u:object_r:vendor_fp_prop:s0
 
+# Insmod
+vendor.all.modules.ready           u:object_r:vendor_device_prop:s0
+vendor.all.devices.ready           u:object_r:vendor_device_prop:s0
+
 # Google camera hal read only props
 ro.vendor.camera.                  u:object_r:camera_ro_prop:s0
 
