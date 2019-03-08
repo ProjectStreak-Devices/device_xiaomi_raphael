@@ -4,3 +4,4 @@ vendor.lineage.biometrics.fingerprint.inscreen::IFingerprintInscreen        u:ob
 vendor.xiaomi.hardware.motor::IMotor                                        u:object_r:hal_motor_hwservice_xiaomi:s0
 vendor.xiaomi.hardware.mlipay::IMlipayService                               u:object_r:hal_mlipay_hwservice:s0
 hardware.google.pixelstats::IPixelStats                                     u:object_r:hal_pixelstats_hwservice:s0
+vendor.nxp.nxpnfc::INxpNfc                                                  u:object_r:hal_nxpnfc_hwservice:s0
