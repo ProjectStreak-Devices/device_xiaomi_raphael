@@ -75,6 +75,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.wfc_avail_ovr=1 \
     persist.radio.NO_STAPA=1 \
     persist.radio.VT_HYBRID_ENABLE=1 \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.ims.disableADBLogs=1 \
     persist.vendor.ims.disableIMSLogs=1 \
