@@ -378,7 +378,7 @@ PRODUCT_PACKAGES += \
 
 # Power HAL
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.raphael-libperfmgr
+    android.hardware.power@1.3-service.pixel-libperfmgr
 
 # Powerhint
 PRODUCT_COPY_FILES += \
