@@ -172,10 +172,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiCustomDoze
 
-# Enable blurs, hidden under dev option
+# Enable blurs
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1 \
-    persist.sys.sf.disable_blurs=1 \
     ro.sf.blurs_are_expensive=1
 
 # Fingerprint
