@@ -376,10 +376,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
-# Power HAL
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.pixel-libperfmgr
-
 # Powerhint
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -536,3 +532,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Use 64-bit dex2oat for better dexopt time.
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
+
+# power HAL
+-include hardware/google/pixel/power-libperfmgr/hidl/device.mk
