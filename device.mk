@@ -167,6 +167,11 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
     vendor/qcom/opensource/commonsys/system/bt/conf
 
+# Overlays - override vendor ones
+PRODUCT_PACKAGES += \
+    DevicesOverlay \
+    DevicesAndroidOverlay
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
