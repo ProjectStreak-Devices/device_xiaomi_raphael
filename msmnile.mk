@@ -287,6 +287,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_msmnile
 
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+    GCamGo
+
 # Media
 PRODUCT_PACKAGES += \
     libarbitrarybytes \
