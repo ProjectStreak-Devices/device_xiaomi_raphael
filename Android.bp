@@ -7,3 +7,9 @@ hidl_package_root {
     name: "vendor.goodix",
     path: "device/xiaomi/raphael/interfaces",
 }
+
+soong_namespace {
+     imports: [
+        "vendor/qcom/opensource/commonsys/packages/apps/Bluetooth",
+    ],
+}
