@@ -1,4 +1,4 @@
-Copyright (C) 2020 LineageOS
+Copyright (C) 2020 RevengeOS
 
 Device configuration for Xiaomi Mi 9T Pro / Redmi K20 Pro
 =========================================
