@@ -1,5 +1,7 @@
 allow init firmware_file:dir mounton;
 allow init firmware_file:filesystem { mount relabelfrom getattr };
+allow init system_file:file { relabelfrom };
+allow init system_file:dir { relabelfrom };
 allow init hal_camera_default_exec:file { read getattr map execute open };
 allow init hal_motor_default_exec:file { execute_no_trans };
 allow init vendor_file:file execute;
