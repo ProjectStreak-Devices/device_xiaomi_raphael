@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_raphael.mk
+    $(LOCAL_DIR)/streak_raphael.mk
+	
+COMMON_LUNCH_CHOICES := \
+    streak_raphael-user \
+    streak_raphael-userdebug \
+    streak_raphael-eng
