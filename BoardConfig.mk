@@ -189,7 +189,6 @@ BOARD_SEPOLICY_M4DEFS += \
     sysfs_ssr=vendor_sysfs_ssr \
     public_vendor_default_prop=vendor_public_vendor_default_prop \
     sensors_prop=vendor_sensors_prop
-BOARD_SEPOLICY_VERS := 29.0
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_raphael

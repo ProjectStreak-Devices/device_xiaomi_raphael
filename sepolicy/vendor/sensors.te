@@ -1,3 +1,7 @@
+# Policy for sensor daemon
+type sensors, domain;
+type sensors_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(sensors)
 r_dir_file(sensors, sysfs_graphics)
 
 allow sensors diag_device:chr_file { read write open ioctl };

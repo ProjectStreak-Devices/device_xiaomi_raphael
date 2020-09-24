@@ -1,5 +1,2 @@
-# Allow kernel to search in debugfs_ipc
-allow kernel debugfs_ipc:dir search;
-
 # Allow kernel to create qipcrtr_socket
 allow kernel self:qipcrtr_socket create;

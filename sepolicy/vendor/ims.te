@@ -1,2 +1,8 @@
+#integrated sensor process
+type ims, domain;
+type ims_exec, exec_type, vendor_file_type, file_type;
+
+# Started by init
+init_daemon_domain(ims)
 allow ims diag_device:chr_file { read write };
 allow ims diag_device:chr_file { open };
