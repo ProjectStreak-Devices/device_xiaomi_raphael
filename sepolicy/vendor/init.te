@@ -14,5 +14,8 @@ allow init akm09970_device:file ioctl;
 # allow init to access /dev/binderfs/hwbinder
 allow init hwservicemanager:binder { call transfer };
 allow init binderfs:chr_file { read write open ioctl map};
+# allow init to access iorapd database
+allow init iorapd_data_file:file { getattr };
 
 dontaudit init bt_firmware_file:filesystem getattr;
+
