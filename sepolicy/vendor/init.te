@@ -18,4 +18,3 @@ allow init binderfs:chr_file { read write open ioctl map};
 allow init iorapd_data_file:file { getattr };
 
 dontaudit init bt_firmware_file:filesystem getattr;
-
