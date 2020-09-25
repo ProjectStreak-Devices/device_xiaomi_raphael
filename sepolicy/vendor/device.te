@@ -6,4 +6,3 @@ type diag_device, dev_type, mlstrustedobject;
 type ipa_dev, dev_type;
 
 type xdsp_device, dev_type;
-

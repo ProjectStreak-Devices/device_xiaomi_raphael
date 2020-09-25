@@ -1,4 +1,4 @@
 allow crash_dump {
   hwservicemanager_prop
-  power_prop
-}:file { getattr open };
+  vendor_power_prop
+}:file r_file_perms;
