@@ -14,6 +14,8 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
+$(call inherit-product-if-exists, vendor/google/gms/config.mk)
+$(call inherit-product-if-exists, vendor/google/pixel/config.mk)
 
 # Inherit some common RevengeOS stuff.
 $(call inherit-product, vendor/revengeos/config/common.mk)
