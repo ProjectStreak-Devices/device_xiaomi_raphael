@@ -32,6 +32,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/raphael/raphael-vendor.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/pixel \
+    hardware/google/interfaces \
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 
 # Hardware
@@ -532,6 +533,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Use 64-bit dex2oat for better dexopt time.
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
+
+# pixelstats
+include hardware/google/pixel/pixelstats/device.mk
 
 # power HAL
 -include hardware/google/pixel/power-libperfmgr/hidl/device.mk
