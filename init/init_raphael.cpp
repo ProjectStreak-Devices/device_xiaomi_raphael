@@ -47,21 +47,21 @@ void load_raphaelglobal() {
     property_override("ro.product.model", "Mi 9T Pro");
     property_override("ro.build.product", "raphael");
     property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "raphael-user 10 QKQ1.190825.002 V12.0.1.0.QFKMIXM release-keys");
+    property_override("ro.build.description", "coral-user 10 RP1A.200720.009 6720564 release-keys");
 }
 
 void load_raphaelin() {
     property_override("ro.product.model", "Redmi K20 Pro");
     property_override("ro.build.product", "raphaelin");
     property_override("ro.product.device", "raphaelin");
-    property_override("ro.build.description", "raphaelin-user 10 QKQ1.190825.002 V12.0.2.0.QFKINXM release-keys");
+    property_override("ro.build.description", "coral-user 10 RP1A.200720.009 6720564 release-keys");
 }
 
 void load_raphael() {
     property_override("ro.product.model", "Redmi K20 Pro");
     property_override("ro.build.product", "raphael");
     property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "raphael-user 10 QKQ1.190825.002 V12.0.2.0.QFKCNXM release-keys");
+    property_override("ro.build.description", "coral-user 10 RP1A.200720.009 6720564 release-keys");
 }
 
 
