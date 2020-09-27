@@ -149,12 +149,7 @@ DISABLE_RILD_OEM_HOOK := true
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     $(DEVICE_PATH)/sepolicy/private \
-    device/qcom/sepolicy/generic/private \
-    device/qcom/sepolicy/qva/private
-
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/qva/public
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
