@@ -560,3 +560,6 @@ include hardware/google/pixel/pixelstats/device.mk
 
 # power HAL
 -include hardware/google/pixel/power-libperfmgr/aidl/device.mk
+
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/sm8150
