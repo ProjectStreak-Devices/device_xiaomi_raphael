@@ -44,11 +44,13 @@ void property_override(char const prop[], char const value[])
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void property_override_dual(char const system_prop[], char const vendor_prop[],
-    char const value[])
+void property_override_multifp(char const buildfp[], char const systemfp[],
+	char const bootimagefp[], char const vendorfp[], char const value[])
 {
-    property_override(system_prop, value);
-    property_override(vendor_prop, value);
+	property_override(buildfp, value);
+	property_override(systemfp, value);
+	property_override(bootimagefp, value);
+	property_override(vendorfp, value);
 }
 
 void load_dalvikvm_properties()
@@ -87,7 +89,8 @@ void vendor_load_properties()
 
     // fingerprint
     property_override("ro.build.description", "coral-user 11 RP1A.201005.004 6782484 release-keys");
-    property_override_dual("ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
+	property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
+	    "ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
 
     load_dalvikvm_properties();
 }
