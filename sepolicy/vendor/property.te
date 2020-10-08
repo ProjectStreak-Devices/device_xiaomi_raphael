@@ -6,3 +6,7 @@ type camera_ro_prop, property_type;
 
 # PowerHal
 vendor_internal_prop(vendor_power_prop)
+
+# Thermal HAL
+type thermal_normal_prop, property_type;
+type vendor_thermal_prop, property_type;

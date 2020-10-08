@@ -146,8 +146,6 @@ on post-fs-data
     mkdir /tombstones/dsps 0771 system system
 
     mkdir /data/vendor/nnhal 0700 system system
-    mkdir /data/vendor/thermal 0771 root system
-    mkdir /data/vendor/thermal/config 0771 root system
     mkdir /data/vendor/nfc 0770 nfc nfc
 
     chmod 0644 /dev/elliptic0
@@ -156,9 +154,6 @@ on post-fs-data
 on boot
     start rmt_storage
     start rfs_access
-
-    chown system system /sys/class/thermal/thermal_message/sconfig
-    write /sys/class/thermal/thermal_message/sconfig 10
 
 on property:sys.boot_completed=1
     setprop vendor.setup.power 1
@@ -235,16 +230,23 @@ on charger
 
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
+    # Health HAL
+    chown system system /sys/devices/virtual/thermal/tz-by-name/soc/mode
+
     start qcom-post-boot
     start vendor.hvdcp_opti
 
-service vendor.thermal-engine /vendor/bin/thermal-engine
+on late-init
+    setprop vendor.thermal.config thermal_info_config.json
+    chown system system /sys/devices/virtual/thermal/tz-by-name/sdm-therm-monitor/trip_point_0_temp
+    chown system system /sys/devices/virtual/thermal/tz-by-name/sdm-therm-monitor/trip_point_0_hyst
+    chown system system /sys/devices/virtual/thermal/tz-by-name/usbc-therm-monitor/trip_point_0_temp
+    chown system system /sys/devices/virtual/thermal/tz-by-name/usbc-therm-monitor/trip_point_0_hyst
+    chown system system /sys/devices/virtual/thermal/tz-by-name/soc/mode
+
+service vendor.thermal-engine /vendor/bin/thermal-engine -c /vendor/etc/thermal-engine-raphael-normal_mode.conf
    class main
    user root
-   socket thermal-send-client stream 0666 system system
-   socket thermal-recv-client stream 0660 system system
-   socket thermal-recv-passive-client stream 0666 system system
-   socket thermal-send-rule stream 0660 system system
    group root
 
 service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
