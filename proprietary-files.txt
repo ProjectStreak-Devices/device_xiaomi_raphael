@@ -734,9 +734,6 @@ vendor/lib64/libperipheral_client.so
 # Power-off alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 
-# Power-libperfmgr
-vendor/lib64/pixel-power-ext-V1-ndk_platform.so|b33a8897c626ff59707808ccbf3e2558d3a05b6e
-
 # QMI
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
