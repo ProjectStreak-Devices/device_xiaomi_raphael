@@ -556,4 +556,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 include hardware/google/pixel/pixelstats/device.mk
 
 # power HAL
--include hardware/google/pixel/power-libperfmgr/hidl/device.mk
+-include hardware/google/pixel/power-libperfmgr/aidl/device.mk
