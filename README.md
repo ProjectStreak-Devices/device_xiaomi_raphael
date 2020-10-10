@@ -24,3 +24,6 @@ Camera  | 48MP(Primary) 8MP(Ultra-wide) 13MP(Telephoto)
 ## Device picture
 
 ![Xiaomi Mi 9T Pro / Redmi K20 Pro](https://xiaomi-mi.com/uploads/CatalogueImage/k20-pro%20(2)_17557_1559503979.jpg "Xiaomi Mi 9T Pro / Redmi K20 Pro in black")
+
+#### Proprietary-files.txt
+All unpinned blobs are extracted from [miui_RAPHAEL_20.9.29_13b36de22c_10.0](http://bigota.d.miui.com/20.9.29/miui_RAPHAEL_20.9.29_13b36de22c_10.0.zip).
