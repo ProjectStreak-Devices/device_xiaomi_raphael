@@ -35,6 +35,7 @@
             <name>IBluetoothHci</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth.audio</name>
@@ -44,6 +45,7 @@
             <name>IBluetoothAudioProvidersFactory</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.0::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.camera.provider</name>
@@ -390,29 +392,18 @@
         <interface>
             <name>IBluetoothAudioProvidersFactory</name>
             <instance>default</instance>
-        <fqname>@2.0::IBluetoothAudioProvidersFactory/default</fqname>
         </interface>
+        <fqname>@2.0::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
-    <!-- BluetoothSar service-->
     <hal format="hidl">
         <name>vendor.qti.hardware.bluetooth_sar</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.0</version>
         <interface>
             <name>IBluetoothSar</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.1::IBluetoothSar/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.btconfigstore</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBTConfigStore</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IBTConfigStore/default</fqname>
+        <fqname>@1.0::IBluetoothSar/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.capabilityconfigstore</name>
@@ -481,7 +472,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.display.allocator</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.0</version>
         <interface>
             <name>IQtiAllocator</name>
             <instance>default</instance>
