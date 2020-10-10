@@ -84,7 +84,7 @@ vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|2821469b7e7f6cee1d3b81a91e1f9a6b9d34e5c5
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/libbluetooth_audio_session_qti.so
@@ -106,10 +106,10 @@ vendor/lib64/libbtnv.so
 vendor/lib64/libbt-hidlclient.so
 
 # Bluetooth_sar | coral-user 11-RP1A.200720.009-6720564
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|69c513dd423649683f2d3132682cea6f66d3223d
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|e3ee09937aa7b070abf05c9b9d272a8cef4d5bd5
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|a97a6c330c932176acee0bce820c6e737778aed4
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|1671815a79dab0fde9248d0851085ec1ab314f64
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|d8cc4680848db03ddcfd99a53cbe1b15b7b282da
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|d2d55bf0a11eed058a76406cfa5d45d63a0a4f21
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|73a21d7de95341f64f65859c995064ddcfb0a422 
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|6bc11d40eed839c52704483728f0e87c4e0f5d6f 
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -477,7 +477,7 @@ vendor/lib64/libtinyxml.so|6b469580f781995a2e78fe1b5c19930040a8798e
 vendor/lib64/libtinyxml2_1.so|92adc9b612766cda6fa50f4c36d046b1a6da0816
 
 # Display-calibration
-vendor/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml
+vendor/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml|9e5b1931b0c971561afff5ecb6a2e57518997003
 vendor/etc/sdr_config.cfg
 
 # Factory
@@ -620,7 +620,7 @@ vendor/firmware/ipa_fws.mdt
 
 # IRQ balancer
 vendor/bin/msm_irqbalance
-vendor/etc/msm_irqbalance.conf
+vendor/etc/msm_irqbalance.conf|ddde87f9808aa711a6c62abd643f746665ce45cc
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
@@ -735,8 +735,8 @@ vendor/lib64/libperipheral_client.so
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 
 # QMI
-system_ext/etc/permissions/qti_libpermissions.xml
-system_ext/etc/permissions/qti_permissions.xml
+system_ext/etc/permissions/qti_libpermissions.xml|92e5814133dbc1f82fce898374d042a42c9ecf9d
+system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/lib/libdiag.so
@@ -863,7 +863,7 @@ product/lib64/vendor.qti.hardware.radio.ims@1.1.so
 product/lib64/vendor.qti.hardware.radio.ims@1.2.so
 product/lib64/vendor.qti.hardware.radio.ims@1.3.so
 product/lib64/vendor.qti.hardware.radio.ims@1.4.so
--product/priv-app/ims/ims.apk
+-product/priv-app/ims/ims.apk|80acb4d9084f59b90b0c3deb9d3977fd244806c3
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
@@ -956,7 +956,7 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
 
 # Soter
--app/SoterService/SoterService.apk
+-app/SoterService/SoterService.apk|24d6342d00de806e33d0bcf531049bd89d11866a 
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
@@ -967,9 +967,8 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/bin/time_daemon
 vendor/lib64/libtime_genoff.so
 
-# Thermal | coral-user 11-RP1A.201005.004-6782484
-vendor/bin/thermal-engine
-vendor/lib64/libqmi_thermal-google-1.so
+# Thermal-engine | coral-user 11-RP1A.201005.004-6782484
+vendor/bin/thermal-engine|692f28daad71b2d607e48287098ab94d81c08985
 
 # Trusted User Interface
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
