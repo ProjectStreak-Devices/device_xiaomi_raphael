@@ -293,13 +293,5 @@
             "Name":"thermal-devfreq-0",
             "Type":"GPU"
         },
-        {
-            "Name":"dc_icl",
-            "Type":"BATTERY"
-        },
-        {
-            "Name":"fcc",
-            "Type":"BATTERY"
-        }
     ]
 }
