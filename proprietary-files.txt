@@ -341,7 +341,6 @@ vendor/lib64/libmivendor_module_calibration.so
 vendor/lib64/libmivendor_module_hall.so
 vendor/lib64/libmivendor_module_motor.so
 vendor/lib64/mi.motor.daemon.so
-vendor/lib64/vendor.xiaomi.hardware.motor@1.0.so
 
 # Camera Popup Sound
 media/audio/ui/popup_cangmen_down.ogg
