@@ -121,6 +121,66 @@
             "Multiplier":0.001
         },
         {
+            "Name":"cpu-1-4-usr",
+            "Type":"CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                95.0,
+                "NAN",
+                "NAN",
+                125.0
+            ],
+            "VrThreshold":"NAN",
+            "Multiplier":0.001
+        },
+        {
+            "Name":"cpu-1-5-usr",
+            "Type":"CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                95.0,
+                "NAN",
+                "NAN",
+                125.0
+            ],
+            "VrThreshold":"NAN",
+            "Multiplier":0.001
+        },
+        {
+            "Name":"cpu-1-6-usr",
+            "Type":"CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                95.0,
+                "NAN",
+                "NAN",
+                125.0
+            ],
+            "VrThreshold":"NAN",
+            "Multiplier":0.001
+        },
+        {
+            "Name":"cpu-1-7-usr",
+            "Type":"CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                95.0,
+                "NAN",
+                "NAN",
+                125.0
+            ],
+            "VrThreshold":"NAN",
+            "Multiplier":0.001
+        },
+       {
             "Name":"gpuss-0-usr",
             "Type":"GPU",
             "HotThreshold":[
@@ -275,6 +335,21 @@
             "VrThreshold":"NAN",
             "Multiplier":0.001
         },
+        {
+            "Name":"npu-usr",
+            "Type":"NPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                "NAN",
+                "NAN",
+                "NAN",
+                "NAN"
+            ],
+            "VrThreshold":"NAN",
+            "Multiplier":0.001
+        },
     ],
     "CoolingDevices":[
         {
@@ -293,5 +368,13 @@
             "Name":"thermal-devfreq-0",
             "Type":"GPU"
         },
+        {
+            "Name":"npu",
+            "Type":"NPU"
+        },
+        {
+            "Name":"battery",
+            "Type":"BATTERY"
+        }
     ]
 }
