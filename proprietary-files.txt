@@ -950,6 +950,10 @@ vendor/lib64/libtime_genoff.so
 # Thermal-engine | coral-user 11-RP1A.201005.004-6782484
 vendor/bin/thermal-engine|692f28daad71b2d607e48287098ab94d81c08985
 
+# Thermal client library 
+vendor/lib/libthermalclient.so
+vendor/lib64/libthermalclient.so
+
 # Trusted User Interface
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
