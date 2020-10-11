@@ -294,20 +294,8 @@
             "Type":"GPU"
         },
         {
-            "Name":"ab",
-            "Type":"NPU"
-        },
-        {
-            "Name":"cx",
-            "Type":"COMPONENT"
-        },
-        {
             "Name":"dc_icl",
             "Type":"BATTERY"
-        },
-        {
-            "Name":"ebi",
-            "Type":"COMPONENT"
         },
         {
             "Name":"fcc",
