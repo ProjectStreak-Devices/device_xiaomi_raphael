@@ -371,26 +371,30 @@ vendor/lib64/libmmcamera_faceproc2.so
 # Charger
 vendor/bin/hvdcp_opti
 
-# DPM
+# DPM | Xiaomi cmi qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJACNXM
 framework/tcmclient.jar
-product/bin/dpmd
-product/etc/dpm/dpm.conf
-product/etc/init/dpmd.rc
-product/etc/permissions/com.qti.dpmframework.xml
-product/etc/permissions/dpmapi.xml
-product/framework/com.qti.dpmframework.jar
-product/framework/dpmapi.jar
-product/lib64/com.qualcomm.qti.dpm.api@1.0.so
-product/lib64/libdpmctmgr.so
-product/lib64/libdpmfdmgr.so
-product/lib64/libdpmtcm.so
--product/priv-app/dpmserviceapp/dpmserviceapp.apk
+system_ext/bin/dpmd
+system_ext/etc/dpm/dpm.conf
+system_ext/etc/init/dpmd.rc
+system_ext/etc/permissions/com.qti.dpmframework.xml
+system_ext/etc/permissions/dpmapi.xml
+system_ext/framework/com.qti.dpmframework.jar
+system_ext/framework/dpmapi.jar
+system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so
+system_ext/lib/libdpmctmgr.so
+system_ext/lib/libdpmfdmgr.so
+system_ext/lib/libdpmtcm.so
+system_ext/lib/libdpmframework.so
+system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
+system_ext/lib64/libdpmctmgr.so
+system_ext/lib64/libdpmfdmgr.so
+system_ext/lib64/libdpmtcm.so
+system_ext/lib64/libdpmframework.so
+-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
+vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
-
-# libdpmframework.so from oneplus8
-product/lib64/libdpmframework.so|67ebd736333ae7158632735e3db06a4f9664f6a6
 
 # DRM
 vendor/bin/qseecomd
@@ -982,7 +986,6 @@ vendor/etc/hdr_config.cfg
 vendor/etc/init/cnd.rc
 vendor/etc/init/dataadpl.rc
 vendor/etc/init/dataqti.rc
-vendor/etc/init/dpmQmiMgr.rc
 vendor/etc/init/imsdatadaemon.rc
 vendor/etc/init/imsqmidaemon.rc
 vendor/etc/init/imsrcsd.rc
