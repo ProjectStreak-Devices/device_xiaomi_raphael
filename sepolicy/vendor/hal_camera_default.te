@@ -32,3 +32,6 @@ binder_call(hal_camera_default, remosaic_daemon)
 
 # For interfacing with PowerHAL
 hal_client_domain(hal_camera_default, hal_power)
+
+# For thermal-send-client
+allow hal_camera_default socket_device:sock_file write;
