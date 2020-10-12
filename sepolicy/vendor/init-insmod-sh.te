@@ -20,10 +20,14 @@ allow init-insmod-sh {
   vendor_sysfs_boot_adsp
 }:file w_file_perms;
 
-# modprobe need proc_modules
-allow init-insmod-sh proc_modules:file r_file_perms;
+# modprobe need proc_modules and proc_cmdline
+allow init-insmod-sh {
+  proc_cmdline
+  proc_modules
+}:file r_file_perms;
 
 allow init-insmod-sh {
   vendor_debugfs_ipc
   vendor_debugfs_wlan
+  vendor_sysfs_slpi
 }:dir search;
