@@ -38,7 +38,7 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# AptX | coral-user 11-RP1A.201005.004-6782484
+# AptX - from coral-user 11-RP1A.201005.004-6782484
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|e25f1087edc95d2ff76c1e37787ca37aae2cf175
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
@@ -371,7 +371,7 @@ vendor/lib64/libmmcamera_faceproc2.so
 # Charger
 vendor/bin/hvdcp_opti
 
-# DPM | Xiaomi cmi qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJACNXM
+# DPM - from Xiaomi cmi qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJACNXM
 framework/tcmclient.jar|22858e8bb7e3f956e487dc6764ad8250f118d7ac
 system_ext/bin/dpmd|95c1d9e3fd30f17a61fd776c9454a148fa4cf103
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
@@ -419,33 +419,33 @@ vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/libStDrvInt.so
 
-# DRM - Widevine | coral-user 11 RP1A.200720.009 6720564
+# DRM Widevine - from coral-user 11 RP1A.200720.009 6720564
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|75103a18355966370895526dc9afb6adff4b755b
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
 vendor/lib/libbase64.so|df47287b27f9d295bf9023376ffa45c928f104ee
-vendor/lib/libcpion.so|8e66a0312ba0c764d39a6b4102a9f764623377f1
+vendor/lib/libcpion.so|923d3b2d486836f7c460ad2305a842c8867e9778
 vendor/lib/libcppf.so|348bc3a94a87ca95f7f60711b329766bfdfd1080
-vendor/lib/libdrmfs.so|382359aa427ebc91c6d0c79715aa2ce4f10c29c9 
-vendor/lib/libhdcp1prov.so|b8b5dd17e62bf06edb1a0d062ffa1550ef2826cc
+vendor/lib/libdrmfs.so|382359aa427ebc91c6d0c79715aa2ce4f10c29c9
+vendor/lib/libhdcp1prov.so|ce4143156c585840067558cf2b8c9c74cc406d88
 vendor/lib/libhdcp2p2prov.so|e8cdff95c865027b43b1e57e325ca54b1aeb3703
-vendor/lib/libhdcpsrm.so|58bdc1fa15b18b57f6fda7c40b86b3517eb23dac
-vendor/lib/libmm-hdcpmgr.so|83487147c3520d7b8144a70c039177506c951c3e
+vendor/lib/libhdcpsrm.so|a57ee04bf6072fd72c5ee3a36be9a8592f440e4f
+vendor/lib/libmm-hdcpmgr.so|696762dc119f19213b6229a8b7de55d6009a0583
 vendor/lib/liboemcrypto.so|cf399eff8c2fba77d8f16d48fb97e90da19640e2
 vendor/lib/librmp.so|9681bf083c034d8003ed21181603d2920f746bbb
 vendor/lib64/libbase64.so|56abccc2379afd85929a2555041b97c233a12c7c
-vendor/lib64/libcpion.so|5def72ea1f0cf6b299e780998b5b09aed66c83b9
-vendor/lib64/libdrmfs.so|1068a5b63ccdd7de47db6ee65206abad0764fd2e
-vendor/lib64/libhdcp1prov.so|d8f5baca0da089df936cd205df3622b8d7c94c0d
-vendor/lib64/libhdcp2p2prov.so|222513a6fad6fe36e38d780e34c74bfdca2979ee
-vendor/lib64/libhdcpsrm.so|c55466a413fc429dec1c69d1cf760ee0dc072dcd
-vendor/lib64/libmm-hdcpmgr.so|e0fda1d39a094d33c21987d9b4201aa95a3512c6
+vendor/lib64/libcpion.so|4042cc726f2afaf914023747d7089ec88c3da461
+vendor/lib64/libdrmfs.so|802f1147a4b9429118ee51a19bb93dbd3f29c588
+vendor/lib64/libhdcp1prov.so|1be120005799bf1b17f93a9ff7264db4a9ca2a55
+vendor/lib64/libhdcp2p2prov.so|561eae5141fff6f6223d459f1d13484aa0c84acd
+vendor/lib64/libhdcpsrm.so|aff516016113358986a0a599701a721c73d657af
+vendor/lib64/libmm-hdcpmgr.so|7b7f6ead181744b6b5b5367975a1b6aee4cfe5e8
 vendor/lib64/liboemcrypto.so|b99e70b63bb2fa92fd5660382b6b16e1998968cc
 vendor/lib64/librmp.so|559a2c15db2ac69b3ac94ccc2f5299ee6e008f41
 vendor/lib64/libwvhidl.so|68d257f6c4b409f71f80c231789d9951f71308a8
 vendor/lib/mediadrm/libdrmclearkeyplugin.so|4e5f5e09eef460572c1f30b39df1cd8a97f58d9e
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so|205388460dc5ac82671888b1bb6a94731f38808d
 
-# Display-Hardware (from LA.UM.8.1.r1-13500-sm8150.0)
+# Display-Hardware - from LA.UM.8.1.r1-13500-sm8150.0
 vendor/lib64/libdisp-aba.so|a7f8975e5a323100bb9e5feb14085c0c4479ce96
 vendor/lib64/libdisplayqos.so|8e5f13a5b7ea0efa8db2902c8719380d710bc857
 vendor/lib64/libhdr_tm.so|4f08d65045893e0ec2b351581d6378f2e187ca82
@@ -583,7 +583,7 @@ vendor/lib64/libllvm-glnext.so|2024abb473452d179c77fddcfb07bc378a9faf73
 vendor/lib64/libllvm-qcom.so|ccaf5c49196fb4ea6b5329ecec79dd6252f1b988
 vendor/lib64/libOpenCL.so|d6bb350254707592d6f6360c06d4c3336f8f1155
 
-# HotwordEnrollment | oneplus8pro qssi-user-11-RP1A.201005.001-2009301800-release-keys
+# HotwordEnrollment - from oneplus8pro qssi-user-11-RP1A.201005.001-2009301800-release-keys
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|7fa8a2f58b9ff48e221cc6c0c4642e74d3081804
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|1757767b2f29fe85d03d0a185c8f99b0085524f3
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|0492cd3db2e253e23b78e56fa8ea7b3a4b15edeb
@@ -669,7 +669,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 
-# Media | coral-user 11 RP1A.201005.004 6782484 release-keys
+# Media - from coral-user 11 RP1A.201005.004 6782484 release-keys
 vendor/lib/libmedia_ecoservice.so|5abf4c780196b5945ca701fd30a8f64ed47f4fdd
 vendor/lib/libqcodec2.so|c163e469736259078b3e7909373f52ea4bc60657
 vendor/lib64/libmedia_ecoservice.so|3ea4a8a5b7bc0b14496d62695f9c67277e150017
@@ -809,7 +809,7 @@ vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 
-# Radio qti-telephony-common | Xiaomi cmi qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJACNXM
+# Radio qti-telephony-common - from Xiaomi cmi qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJACNXM
 system_ext/framework/qti-telephony-common.jar|98951c48563c5846a58c9a3c4c254f32d0741f36
 
 # Radio-IMS
@@ -946,7 +946,7 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/bin/time_daemon
 vendor/lib64/libtime_genoff.so
 
-# Thermal-engine | coral-user 11-RP1A.201005.004-6782484
+# Thermal-engine - from coral-user 11-RP1A.201005.004-6782484
 vendor/bin/thermal-engine|692f28daad71b2d607e48287098ab94d81c08985
 
 # Thermal client library 
