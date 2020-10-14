@@ -1,3 +1,9 @@
+# Graphics
+debug.sf.hw=1
+debug.gralloc.enable_fb_ubwc=1
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+
 # ZRAM writeback
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
