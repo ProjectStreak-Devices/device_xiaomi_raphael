@@ -14,7 +14,13 @@
   ~ limitations under the License.
   -->
 
-<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<com.android.systemui.biometrics.AuthBiometricFingerprintView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contents"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
 
     <TextView
         android:id="@+id/title"
@@ -52,10 +58,10 @@
         android:id="@+id/biometric_icon"
         android:layout_width="@dimen/biometric_dialog_biometric_icon_size"
         android:layout_height="@dimen/biometric_dialog_biometric_icon_size"
-        android:paddingTop="48dp"
+        android:paddingTop="24dp"
         android:layout_gravity="center_horizontal"
         android:scaleType="fitXY"
-        android:visibility="invisible" />
+        android:visibility="invisible"/>
 
     <LinearLayout
         android:id="@+id/button_bar"
@@ -110,4 +116,4 @@
             android:visibility="visible" />
     </LinearLayout>
 
-</merge>
+</com.android.systemui.biometrics.AuthBiometricFingerprintView>
