@@ -158,8 +158,8 @@ on post-fs-data
     chmod 0644 /dev/elliptic1
 
 on boot
-    start rmt_storage
-    start rfs_access
+    start vendor.rmt_storage
+    start vendor.rfs_access
 
 on property:sys.boot_completed=1
     setprop vendor.setup.power 1
