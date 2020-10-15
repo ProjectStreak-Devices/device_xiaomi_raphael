@@ -9,6 +9,7 @@ genfscon sysfs /devices/platform/soc/890000.i2c/i2c-0/0-003b/power_supply/idt   
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/health/eol                   u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/health/lifetimeA             u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/health/lifetimeB             u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/health/lifetimeC             u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/version                      u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:     u:object_r:sysfs_scsi_devices_0000:s0
 
@@ -33,6 +34,15 @@ genfscon sysfs /power/rpmh_stats/master_stats                                   
 genfscon sysfs /kernel/wlan/power_stats                                         u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:vadc@3100/iio:device1/name           u:object_r:sysfs_power_stats:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-04/c440000.qcom,spmi:qcom,pm8150l@4:vadc@3100/iio:device2/name           u:object_r:sysfs_power_stats:s0
+
+# Pixelstats
+genfscon sysfs /class/power_supply/battery/cycle_count                          u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/slowio_read_cnt              u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/slowio_read_us               u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/slowio_write_cnt             u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/slowio_write_us              u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/slowio_sync_cnt              u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/slowio_unmap_cnt             u:object_r:sysfs_scsi_devices_0000:s0
 
 # Insmod
 genfscon sysfs /kernel/boot_cdsp/boot                                           u:object_r:sysfs_msm_boot:s0

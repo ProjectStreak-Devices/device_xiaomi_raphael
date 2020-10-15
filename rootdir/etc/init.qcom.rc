@@ -93,6 +93,16 @@ on early-boot
     # Permission for Health Storage HAL
     chown system system /sys/devices/platform/soc/1d84000.ufshc/manual_gc
 
+    # Permission for Pixelstats
+    chown system system /sys/class/power_supply/battery/cycle_count
+    chown system system /sys/devices/platform/soc/1d84000.ufshc/slowio_read_cnt
+    chown system system /sys/devices/platform/soc/1d84000.ufshc/slowio_write_cnt
+    chown system system /sys/devices/platform/soc/1d84000.ufshc/slowio_unmap_cnt
+    chown system system /sys/devices/platform/soc/1d84000.ufshc/slowio_sync_cnt
+    chown system system /sys/devices/platform/soc/1d84000.ufshc/health/lifetimeA
+    chown system system /sys/devices/platform/soc/1d84000.ufshc/health/lifetimeB
+    chown system system /sys/devices/platform/soc/1d84000.ufshc/health/lifetimeC
+
 on boot
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/state
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
