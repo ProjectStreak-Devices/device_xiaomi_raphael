@@ -399,13 +399,13 @@ vendor/lib64/libdpmqmihal.so|af1d218ec8a483dc16f9b94723a86a5903217220
 vendor/bin/qseecomd
 vendor/lib/libcpion.so
 vendor/lib/libQSEEComAPI.so
-vendor/lib/liboemcrypto.so
+vendor/lib/liboemcrypto.so|cf399eff8c2fba77d8f16d48fb97e90da19640e2
 vendor/lib64/libcpion.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/liboemcrypto.so
+vendor/lib64/liboemcrypto.so|b99e70b63bb2fa92fd5660382b6b16e1998968cc
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
 vendor/lib64/libQSEEComAPI.so
