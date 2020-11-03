@@ -48,21 +48,21 @@ void load_raphaelglobal() {
     property_override("ro.product.model", "Mi 9T Pro");
     property_override("ro.build.product", "raphael");
     property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "coral-user 11 RP1A.201005.004 6782484 release-keys");
+    property_override("ro.build.description", "coral-user 11 RP1A.201105.002 6869500 release-keys");
 }
 
 void load_raphaelin() {
     property_override("ro.product.model", "Redmi K20 Pro");
     property_override("ro.build.product", "raphaelin");
     property_override("ro.product.device", "raphaelin");
-    property_override("ro.build.description", "coral-user 11 RP1A.201005.004 6782484 release-keys");
+    property_override("ro.build.description", "coral-user 11 RP1A.201105.002 6869500 release-keys");
 }
 
 void load_raphael() {
     property_override("ro.product.model", "Redmi K20 Pro");
     property_override("ro.build.product", "raphael");
     property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "coral-user 11 RP1A.201005.004 6782484 release-keys");
+    property_override("ro.build.description", "coral-user 11 RP1A.201105.002 6869500 release-keys");
 }
 
 void load_dalvikvm_properties()
@@ -102,7 +102,7 @@ void vendor_load_properties() {
 
     property_override("ro.oem_unlock_supported", "0");
     property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
-	    "ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
+	    "ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
     property_override("ro.control_privapp_permissions", "log");
     property_override("ro.apex.updatable", "true");
 
