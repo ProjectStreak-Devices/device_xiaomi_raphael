@@ -16,7 +16,4 @@
 
 <resources>
     <item name="fingerprint_sensor_location_fraction_y" type="fraction">78%</item>
-    <dimen name="fingerprint_dot_radius">8dp</dimen>
-    <dimen name="search_bar_corner_radius">24.0dip</dimen>
-    <dimen name="suggestion_card_corner_radius">8.0dip</dimen>
 </resources>
