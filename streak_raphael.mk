@@ -6,17 +6,12 @@
 
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/streak/config/common.mk)
+# Inherit some common Streak stuff.
+$(call inherit-product, vendor/streak/config/common_full_phone.mk)
 
-# Setup Gapps options
-IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
-# Derp options
+# Streak options
 TARGET_USES_BLUR := true
 
 # Device identifier. This must come after all inclusions.
