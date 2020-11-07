@@ -117,6 +117,9 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
 
+# IPA
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
