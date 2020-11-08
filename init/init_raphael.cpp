@@ -27,6 +27,8 @@
 
 #include <stdlib.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/stat.h>
+#include <sys/types.h>
 #include <sys/_system_properties.h>
 #include <sys/sysinfo.h>
 
@@ -42,6 +44,50 @@ void property_override(char const prop[], char const value[])
         __system_property_update(pi, value, strlen(value));
     else
         __system_property_add(prop, strlen(prop), value, strlen(value));
+}
+
+/* From Magisk@jni/magiskhide/hide_utils.c */
+static const char *snet_prop_key[] = {
+    "ro.boot.vbmeta.device_state",
+    "ro.boot.verifiedbootstate",
+    "ro.boot.flash.locked",
+    "ro.boot.selinux",
+    "ro.boot.veritymode",
+    "ro.boot.warranty_bit",
+    "ro.warranty_bit",
+    "ro.debuggable",
+    "ro.secure",
+    "ro.build.type",
+    "ro.build.tags",
+    "ro.build.selinux",
+    NULL
+};
+
+ static const char *snet_prop_value[] = {
+    "locked",
+    "green",
+    "1",
+    "enforcing",
+    "enforcing",
+    "0",
+    "0",
+    "0",
+    "1",
+    "user",
+    "release-keys",
+    "1",
+    NULL
+};
+
+ static void workaround_snet_properties() {
+
+     // Hide all sensitive props
+    for (int i = 0; snet_prop_key[i]; ++i) {
+        property_override(snet_prop_key[i], snet_prop_value[i]);
+    }
+
+     chmod("/sys/fs/selinux/enforce", 0640);
+    chmod("/sys/fs/selinux/policy", 0440);
 }
 
 void property_override_multifp(char const buildfp[], char const systemfp[],
@@ -93,4 +139,7 @@ void vendor_load_properties()
 	    "ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
 
     load_dalvikvm_properties();
+	
+     // Workaround SafetyNet
+    workaround_snet_properties();
 }
