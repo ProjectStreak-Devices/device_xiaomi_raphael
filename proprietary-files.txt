@@ -839,7 +839,7 @@ product/lib64/vendor.qti.hardware.radio.ims@1.1.so
 product/lib64/vendor.qti.hardware.radio.ims@1.2.so
 product/lib64/vendor.qti.hardware.radio.ims@1.3.so
 product/lib64/vendor.qti.hardware.radio.ims@1.4.so
--product/priv-app/ims/ims.apk|7aff4613e75dfe90363409cf649e2a3e09469921
+-product/priv-app/ims/ims.apk|f7eefdbd0a59a9cc127421fda73a666497290cf7
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
