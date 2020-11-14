@@ -145,7 +145,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libcodec2_hidl@1.0.vendor \
-    libavservices_minijail_vendor
+    libavservices_minijail_vendor \
+    libavservices_minijail_32 \
+    libavservices_minijail.vendor \
 
 # Display
 PRODUCT_PACKAGES += \
@@ -506,8 +508,8 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libdisplayconfig \
-    libdisplayconfig.vendor \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
     libnl \
     libqdMetaData \
     libqdMetaData.system
