@@ -347,14 +347,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
 # NFC
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/nxp/opensource/sn100x
-
-# NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
     NfcNci \
     Tag \
+    SecureElement \
     com.android.nfc_extras
 
 PRODUCT_COPY_FILES += \
