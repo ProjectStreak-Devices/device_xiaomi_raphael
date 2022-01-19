@@ -87,6 +87,10 @@ void vendor_load_properties() {
         set_device_props(
             "Xiaomi", "raphael", "Mi 9T Pro");
     }
+
+    property_override("ro.build.fingerprint", "google/raven/raven:12/SQ1D.211205.016.A1/7957957:user/release-keys");
+    property_override("ro.build.description", "raphael-user 11 RKQ1.200826.002 V12.5.2.0.RFKMIXM release-keys");
+
     property_override("ro.boot.verifiedbootstate", "green");
 
     load_dalvik_properties();
