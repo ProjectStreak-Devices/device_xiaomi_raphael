@@ -178,6 +178,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiCustomDoze
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/doze/privapp-permissions-doze.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-doze.xml
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi_raphael \
